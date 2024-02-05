@@ -1,0 +1,25 @@
+﻿<Window x:Class="csvto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:csvto"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="743">
+    <Grid Margin="0,0,10,0" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+
+        <DataGrid x:Name="gr" ScrollViewer.ScrollChanged="DataGrid_ScrollChanged" d:ItemsSource="{d:SampleData ItemCount=5}" ColumnWidth="*" AutoGenerateColumns="True" RowHeight="30" HeadersVisibility="None" Margin="0,0,0,10" Grid.Column="0"/>
+        <DataGrid x:Name="gr_Copy" ScrollViewer.ScrollChanged="DataGrid_ScrollChanged" d:ItemsSource="{d:SampleData ItemCount=5}" ColumnWidth="*" AutoGenerateColumns="True" RowHeight="30" HeadersVisibility="None" Margin="10,0,0,10" Grid.Column="1" />
+        <Button x:Name="CSVButton" Grid.Column="2" Content="Load CSV" HorizontalAlignment="Center" Margin="0,30,0,0" VerticalAlignment="Top" Click="CSVButton_Click" IsDefault="True" RenderTransformOrigin="0.113,-2.713" Width="80"/>
+        <CheckBox x:Name="GridScrollCheck" Grid.Column="2" Content="Scroll Lock" IsChecked="True" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="JsonButton" Grid.Column="2" Content="Load JSON" HorizontalAlignment="Center" Margin="0,65,0,0" VerticalAlignment="Top" Click="OpenJsonFile_Click" Width="80"/>
+        <CheckBox x:Name="CreateJsonCheck" Grid.Column="2" Content="Create Json" ToolTip="Create Json in same directory as loaded CSV" HorizontalAlignment="Center" Margin="0,142,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

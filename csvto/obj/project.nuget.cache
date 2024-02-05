@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "U71Xx5Gyw+qLjYlKVvrbIsJRqVqJLA2UWeS8L/nlnvSucfXLh2mwaZ/xVfDftRilCVV7eaE3jLtktJufYijcOg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jtidw\\source\\repos\\csvto\\csvto\\csvto.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jtidw\\.nuget\\packages\\csvhelper\\30.1.0\\csvhelper.30.1.0.nupkg.sha512",
+    "C:\\Users\\jtidw\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\jtidw\\.nuget\\packages\\system.linq.async\\4.0.0\\system.linq.async.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
